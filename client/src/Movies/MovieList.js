@@ -35,7 +35,7 @@ export default class MovieList extends Component {
 function MovieDetails({ movie }) {
   const {id, title, director, metascore, stars } = movie;
   return (
-    <Link to={`/movies/${id}`}>
+    <Link to={`/movies/${id}`} className="movie-card">
       <h2>{title}</h2>
       <div className="movie-director">
         Director: <em>{director}</em>
